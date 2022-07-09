@@ -40,43 +40,43 @@ const btn0 = document.querySelector('#zero');
 
 
 btn1.addEventListener('click', () => {
-    display.textContent = '1';
+    display.textContent += '1';
 })
 
 btn2.addEventListener('click', () => {
-    display.textContent = '2';
+    display.textContent += '2';
 })
 
 btn3.addEventListener('click', () => {
-    display.textContent = '3';
+    display.textContent += '3';
 })
 
 btn4.addEventListener('click', () => {
-    display.textContent = '4';
+    display.textContent += '4';
 })
 
 btn5.addEventListener('click', () => {
-    display.textContent = '5';
+    display.textContent += '5';
 })
 
 btn6.addEventListener('click', () => {
-    display.textContent = '6';
+    display.textContent += '6';
 })
 
 btn7.addEventListener('click', () => {
-    display.textContent = '7';
+    display.textContent += '7';
 })
 
 btn8.addEventListener('click', () => {
-    display.textContent = '8';
+    display.textContent += '8';
 })
 
 btn9.addEventListener('click', () => {
-    display.textContent = '9';
+    display.textContent += '9';
 })
 
 btn0.addEventListener('click', () => {
-    display.textContent = '0';
+    display.textContent += '0';
 })
 
 
