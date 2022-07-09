@@ -1,0 +1,52 @@
+body {
+    font-family: 'Courier New', sans-serif;
+    display: flex; 
+    justify-content: center;
+    padding: 24px;
+    background-color: black;
+}
+
+div, h1, h2, button {
+    border: 2px solid black;
+}
+
+h1 {
+    font-size: 40px;
+    padding:8px;
+    background-color:white
+}
+
+.display {
+    font-size: 48px;
+    margin-top: 8px;
+    background-color: gray;
+    padding: 8px;
+    margin-top: 0
+}
+
+.calcContainer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    width: 600px;
+    flex-wrap: wrap;
+    background-color: darkgray;
+}
+
+.buttonContainer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 24px;
+    flex-wrap: wrap;
+    padding: 48px;
+    background-color: darkgray
+}
+
+button {
+    font-size: 48px;
+    width: 86px;
+    height: 86px;
+    
+}
