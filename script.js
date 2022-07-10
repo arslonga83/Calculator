@@ -22,8 +22,12 @@ function operate ([a, operator, b]) {
         return total = multiply (a, b);
     }
     else if (operator==='/') {
+        if (b==='0') {
+            return 'Impossible'
+        }
+        else {
         return total = divide (a, b);
-    }
+    }}
 }
 
 const nums = document.querySelectorAll('.num');
@@ -37,11 +41,13 @@ let formula = [];
 
 nums.forEach(item => {
     item.addEventListener('click', () => {
-    if (formula.length === 2 || memory === 'reset') {
+    item.classList.add('click')
+    if (formula.length === 2 && memory !== 'digit'|| memory === 'reset') {
         display.textContent = '';
     }
     display.textContent += item.textContent;
-    memory = ''
+    memory = 'digit';
+    
     })
 })
 
@@ -76,7 +82,4 @@ btnclear.addEventListener('click', () => {
     memory = 'reset';
     formula = [];
 })
-
-
-
 
