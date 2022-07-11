@@ -72,6 +72,9 @@ btnequals.addEventListener('click', () => {
     formula.push(display.textContent);
     formula.join();
     display.textContent = operate(formula);
+    if (display.textContent > 9999999999) {
+        display.textcontent = 'too long!'
+    }
     memory = 'reset';
     formula = [];
 });
