@@ -51,10 +51,12 @@ button {
     font-size: 48px;
     width: 86px;
     height: 86px;
-    transition: all .07s ease;
 }
 
-.click {
-    transform: scale (1.1);
-    border-color: red;
+button:active {
+    border: 2px solid yellow;
+}
+
+button:hover {
+    background-color: grey;
 }

@@ -41,7 +41,6 @@ let formula = [];
 
 nums.forEach(item => {
     item.addEventListener('click', () => {
-    item.classList.add('click')
     if (formula.length === 2 && memory !== 'digit'|| memory === 'reset') {
         display.textContent = '';
     }
