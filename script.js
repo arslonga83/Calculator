@@ -49,10 +49,11 @@ nums.forEach(item => {
     if(display.textContent.length > '19') {
         display.textContent = 'Too long!'
     }
-    memory = 'digit';
+    memory = 'digit'; //this lets us keep adding digits until we click an operator
     })
 })
 
+//operators make use of the text from the display and pushes it into a formula. the operate formala runs everytime it is full 
 symbols.forEach(item => {
     item.addEventListener('click', () => {
     memory = display.textContent
