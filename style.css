@@ -4,10 +4,21 @@ body {
     justify-content: center;
     padding: 24px;
     background-color: black;
+    background-image: url('math-background.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
 }
 
 h1, h2, button {
     border: 2px solid black;
+}
+
+.brandName {
+    background-color: lightblue;
+}
+
+h2 {
+    max-width: 550px;
 }
 
 h1 {
@@ -25,6 +36,7 @@ h1 {
     height: 48px;
     min-width: 300px;
     text-align: right;
+   
 }
 
 .calcContainer {
@@ -35,6 +47,7 @@ h1 {
     width: 600px;
     flex-wrap: wrap;
     background-color: darkgray;
+    border: 2px solid black;
 }
 
 .buttonContainer {

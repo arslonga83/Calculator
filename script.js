@@ -45,8 +45,10 @@ nums.forEach(item => {
         display.textContent = '';
     }
     display.textContent += item.textContent;
+    if(display.textContent.length > '19') {
+        display.textContent = 'Too long!'
+    }
     memory = 'digit';
-    
     })
 })
 
@@ -72,8 +74,9 @@ btnequals.addEventListener('click', () => {
     formula.push(display.textContent);
     formula.join();
     display.textContent = operate(formula);
-    if (display.textContent > 9999999999) {
-        display.textcontent = 'too long!'
+    if(display.textContent % 1 !== 0) {
+        display.textContent = operate(formula).toFixed('5')
+        display.textContent = parseFloat(display.textContent);
     }
     memory = 'reset';
     formula = [];
