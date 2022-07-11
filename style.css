@@ -3,7 +3,7 @@ body {
     display: flex; 
     flex-direction: column;
     justify-content: center;
-    align-items: center;
+    align-items: center;    
     padding: 24px;
     background-color: black;
     background-image: url('math-background.jpg');
@@ -31,10 +31,10 @@ h1 {
 
 .display {
     font-size: 48px;
-    margin-top: 8px;
     background-color: gray;
     padding: 8px;
     margin-top: 0;
+    margin-bottom: 0;
     height: 48px;
     min-width: 300px;
     text-align: right;
@@ -58,7 +58,7 @@ h1 {
     align-items: center;
     gap: 24px;
     flex-wrap: wrap;
-    padding: 48px;
+    padding: 40px;
     background-color: darkgray;
 }
 

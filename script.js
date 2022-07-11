@@ -30,6 +30,7 @@ function operate ([a, operator, b]) {
     }}
 }
 
+const backspace = document.querySelector('#backspace');
 const nums = document.querySelectorAll('.num');
 const symbols = document.querySelectorAll('.symbol');
 const display = document.querySelector('.display');
@@ -88,3 +89,6 @@ btnclear.addEventListener('click', () => {
     formula = [];
 })
 
+backspace.addEventListener('click', () => {
+    display.textContent = display.textContent.slice(0, display.textContent.length-1);
+})
