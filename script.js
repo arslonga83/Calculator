@@ -36,7 +36,6 @@ const symbols = document.querySelectorAll('.symbol');
 const display = document.querySelector('.display');
 const btnequals = document.querySelector('#equals');
 const btnclear = document.querySelector('#clear');
-const btn1 = document.querySelector('#one');
 
 let memory = '';
 let formula = [];
