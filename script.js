@@ -36,6 +36,7 @@ const symbols = document.querySelectorAll('.symbol');
 const display = document.querySelector('.display');
 const btnequals = document.querySelector('#equals');
 const btnclear = document.querySelector('#clear');
+const btn1 = document.querySelector('#one');
 
 let memory = '';
 let formula = [];
@@ -92,4 +93,70 @@ btnclear.addEventListener('click', () => {
 
 backspace.addEventListener('click', () => {
     display.textContent = display.textContent.slice(0, display.textContent.length-1);
+})
+
+//these event listeners each simulate a button click, so user can type
+addEventListener('keydown', (e) => {
+    if(e.key === '1') {
+        document.getElementById('one').click();
+    }
+    else if(e.key === '2') {
+        document.getElementById('two').click();
+    }
+    else if(e.key === '3') {
+        document.getElementById('three').click();
+    }
+    else if(e.key === '4') {
+        document.getElementById('four').click();
+    }
+    else if(e.key === '5') {
+        document.getElementById('five').click();
+    }
+    else if(e.key === '6') {
+        document.getElementById('six').click();
+    }
+    else if(e.key === '7') {
+        document.getElementById('seven').click();
+    }
+    else if(e.key === '8') {
+        document.getElementById('eight').click();
+    }
+    else if(e.key === '9') {
+        document.getElementById('nine').click();
+    }
+    else if(e.key === '0') {
+        document.getElementById('zero').click();
+    }
+    else if(e.key === '.') {
+        document.getElementById('decimal').click();
+    }
+    else if(e.key === '+') {
+        document.getElementById('plus').click();
+    }
+    else if(e.key === '-') {
+        document.getElementById('minus').click();
+    }
+    else if(e.key === '*') {
+        document.getElementById('times').click();
+    }
+    else if(e.key === '/') {
+        document.getElementById('divide').click();
+    }
+    else if(e.key === '=') {
+        document.getElementById('equals').click();
+    }
+    else if(e.key === 'Escape') {
+        document.getElementById('clear').click();
+    }
+    else if(e.key === 'Backspace') {
+        document.getElementById('backspace').click();
+    }
+
+
+
+
+
+
+
+
 })
