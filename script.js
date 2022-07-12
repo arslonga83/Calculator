@@ -43,9 +43,12 @@ let formula = [];
 
 nums.forEach(item => {
     item.addEventListener('click', () => {
-    if (formula.length === 2 && memory !== 'digit'|| memory === 'reset') {
+    if (formula.length === 2 && memory !== 'digit'|| memory === 'reset') {  
         display.textContent = '';
     }
+    if (display.textContent.includes('.') && item.textContent.includes('.')) {  // don't allow multiple decimals
+        return;
+    };
     display.textContent += item.textContent;
     if(display.textContent.length > '19') {
         display.textContent = 'Too long!'
@@ -151,12 +154,4 @@ addEventListener('keydown', (e) => {
     else if(e.key === 'Backspace') {
         document.getElementById('backspace').click();
     }
-
-
-
-
-
-
-
-
 })
